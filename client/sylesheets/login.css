@@ -1,0 +1,167 @@
+/* CSS declarations go here */
+.loginMain {
+    #position: relative; #top: -50%; #left: -50%;
+}
+.loginContent{
+    width:400px;
+    height:500px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left:-200px;
+    margin-top:-250px;
+
+/*
+    background : #000000;
+    opacity : 0.2;
+    filter: alpha(opacity=20);
+    -moz-opacity:0.2;
+    -khtml-opacity: 0.2;
+*/
+}
+.ctn_logIn{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:whitesmoke;
+    height: 700px;
+
+}
+
+
+.koodcenter{
+    text-align : center;
+    font-family: 'Kool Beans';
+    font-size: 130px;
+}
+
+/* 여기서부터 login.html css입니다.*/
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #eee;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+.form-signin-heading{
+    text-align: center;
+    font-family:"Kool Beans";
+
+}
+.form-signin-heading2{
+    text-align: center;
+
+
+}
+
+
+
+
+.form-signin .checkbox {
+    font-weight: normal;
+}
+.form-signin{
+    /*margin-top: 100px;*/
+    /*margin-bottom: 50px;*/
+}
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.cnt_signUp{
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+    text-align: center;
+    #position: relative; #top: -50%; #left: -50%;
+
+}
+
+/* 이미지 잘라서 가운데정렬 */
+.thumbnail {
+    position: relative;
+    width: auto;
+    height: 900px;
+    overflow: hidden;
+}
+.thumbnail img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.thumbnail img.portrait {
+    width: auto;
+    height: 100%;
+}
+/*
+@media all and (min-width:768px) and (max-width:1024px)
+{
+    .thumbnail {
+        position: relative;
+        width: auto;
+        height: 700px;
+        overflow: hidden;
+    }
+    .thumbnail img.portrait {
+        width: 400px;
+        height: auto;
+    }
+
+    h1{
+        color :red;
+    }
+}
+*/
+/*여기까지*/
+
+
+@font-face {
+    font-family: Kool Beans; src: url('http://www.mediafont.com/storage/contents/10911/font.eot');
+     /* IE */
+    src: local('Kool Beans'), url('http://www.mediafont.com/storage/contents/10911/KoolBean.ttf');
+    /* non-IE */
+}
+
+
+
+/*signUp css*/
+.cnt_signUp{
+    background-color:darkred;
+}
+.txt_welcome{
+    font-weight: bold;
+    font-family: Arial;
+    color: whitesmoke;
+}
+.form-group .txt_form{
+    color:whitesmoke;
+}
+

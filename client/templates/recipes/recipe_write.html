@@ -1,0 +1,55 @@
+<template name="recipeWrite">
+    <form>
+        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+            <h1 class="page-header">WriteRecipe</h1>
+
+
+            <div class="row">
+                <div class="col-md-2 txt_write_recipeName">
+                    <label for="recipeName">Title</label>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" name="recipeName" placeholder="Please Input This Recipe Name">
+                </div>
+                <div class="col-md-3 btn_writeRecipe">
+                    <button type="button" name="Submit" class="btn btn_write_upload" >Submit</button>
+                    <button type="button" name="Cancel" class="btn btn_write_upload">Cancel</button>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 txt_write_recipeName">
+                    <label for="recipeName">Ingredient</label>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" name="ingredientList" placeholder="Please Input Ingredient list">
+                </div>
+                <div class="col-md-3 btn_writeRecipe">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-2 txt_write_recipeName">
+                    <label for="recipeName">Division</label>
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" name="division" placeholder="ex) Morning, Lunch, Dinner, Dessert, Late night meal">
+                </div>
+                <div class="col-md-3 btn_writeRecipe">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="com-md-2"></div>
+                <div class="titleImage">
+                    <input type="file" name="inp_upload" class="myTitleInput">
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <br><h2>Write Your Recipe Method</h2>
+
+    <div class="recipeWriteMethod">{{>recipeWriteMethod}}</div>
+</template>
+

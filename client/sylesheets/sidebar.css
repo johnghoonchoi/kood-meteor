@@ -1,0 +1,42 @@
+.ctn_sideBar_myinfo{
+    width: auto;
+    margin: 5px;
+    margin-top: 75px;
+    text-align: center;
+    background-color: whitesmoke;
+
+}
+
+.ctn_sideBar_btn{
+    margin-top: 30px;
+    width:180px;
+    text-align: center;
+}
+
+.sideBar_myinfo_userInfo{
+    font-size: large;
+}
+
+.sideBar_myinfo_userName{
+    font-size: x-large;
+}
+
+.select_status_recipe{
+    font-size: x-large;
+    margin: 5px;
+}
+
+.ctn_write_recipe_btn{
+    width:auto;
+    text-align: center;
+}
+
+.select_status_recipe{
+    font-size: x-large;
+    margin: 5px;
+}
+
+.ctn_write_recipe_btn{
+    width:auto;
+    text-align: center;
+}

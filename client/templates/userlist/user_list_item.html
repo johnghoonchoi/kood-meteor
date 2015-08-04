@@ -1,0 +1,13 @@
+<template name="userListItem">
+    <tr>
+        <td>{{this.username}}</td>
+        <td>{{this.password}}</td>
+        <td>{{this.email}}</td>
+        <td>{{this.profile.nickname}}</td>
+        <td>
+            <button type="button" name="remove" class="btn btn-default btn-small">
+                <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+            </button>
+        </td>
+    </tr>
+</template>

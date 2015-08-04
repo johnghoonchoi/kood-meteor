@@ -1,0 +1,56 @@
+.cnt_recipeListItem {
+    float: left;
+    padding: 10px;
+    width: 220px;
+    background-color: whitesmoke;
+    margin: 10px;
+    text-align: center;
+}
+
+.recipeName{
+    font-size: large;
+
+
+}
+.recipeDesc, .userName{
+    font-size: medium;
+}
+.inner_processText{
+    float:left;
+}
+.txt_write_recipeName{
+    text-align: right;
+}
+
+.btn_writeRecipe{
+    text_align: right;
+}
+.cnt_upload_img{
+    text-align: right;
+}
+
+
+
+/*
+* thumbnail pictures
+*/
+.thumbnailMain{
+    position: relative;
+    width: 200px;
+    height: 210px;
+    overflow: hidden;
+}
+.thumbnailMain img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.thumbnail img.portraitMain {
+    width: 100%;
+    height: auto;
+}

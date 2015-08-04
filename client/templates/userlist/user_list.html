@@ -1,0 +1,17 @@
+<template name="userList">
+    <div class="panel panel-default">
+        <table class="table table-condensed table-striped table-bordered table-hover">
+            <tbody>
+            <tr>
+                <td>username</td>
+                <td>email</td>
+                <td>profile</td>
+                <td>Delete</td>
+            </tr>
+            {{#each list}}
+                {{>userListItem}}
+            {{/each}}
+            </tbody>
+        </table>
+    </div>
+</template>

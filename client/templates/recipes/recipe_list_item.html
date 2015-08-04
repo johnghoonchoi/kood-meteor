@@ -1,0 +1,15 @@
+<template name="recipeListItem">
+    <div class="cnt_recipeListItem">
+        <a href = {{pathFor 'recipePage'}}>
+            <span class="recipeGrade"></span>
+            <span class="recipeName">{{this.recipeName}}</span><br>
+
+            <div class="thumbnailMain">
+                <img src="{{this.titlePic}}" alt="..." class="img-rounded portraitMain"><br>
+            </div>
+            <span class="recipeDesc"></span> <br>
+            <span class="userName">{{this.userName}}</span><br>
+        </a>
+            <button class="button" name="btn_delete">delete</button>
+    </div>
+</template>
