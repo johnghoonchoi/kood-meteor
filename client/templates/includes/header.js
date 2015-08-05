@@ -7,7 +7,7 @@ Template.header.events({
         Router.go('/userList');
     },
     'click a[name=Search]': function (evt, tmpl) {
-        Session.set('recipeName', tmpl.find('input[name=SearchName]').value)
+        Session.set('searchResult', tmpl.find('input[name=SearchName]').value)
         Router.go('/searchPage');
     }
 });
