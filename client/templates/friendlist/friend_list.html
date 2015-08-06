@@ -3,8 +3,7 @@
         <h1 class="page-header">친구목록</h1>
         {{#each list}}
             <div class="listdiv">
-                <img src={{recipePic}} alt="..." class="img-circle "><br>
-                <span class="userName">{{recipeName}}</span><br>
+                <span class="userName">{{this.username}}</span><br>
                 <span class="userFollwer">123 / </span>
                 <span class="userFollwing">123</span>
             </div>
