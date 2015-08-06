@@ -15,7 +15,7 @@ Template.recipePageItem.events({
                     }
                 )
             }
-            
+
         }
     }
 });
