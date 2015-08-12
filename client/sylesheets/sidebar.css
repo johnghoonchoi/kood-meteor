@@ -40,3 +40,31 @@
     width:auto;
     text-align: center;
 }
+
+.thumbnailProfile{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+.thumbnailProfile img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.thumbnailProfile img.portraitProfile {
+    width: 100%;
+    height: auto;
+}
+
+/*
+* 체크박스 변경 관 련
+*/
+.select_status_recipe > li{
+    margin : 10px;
+}

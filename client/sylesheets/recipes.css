@@ -24,6 +24,7 @@
 
 .btn_writeRecipe{
     text_align: right;
+
 }
 .cnt_upload_img{
     text-align: right;
@@ -53,4 +54,36 @@
 .thumbnail img.portraitMain {
     width: 100%;
     height: auto;
+}
+
+
+
+.thumbnailViewRecipe{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    background-color: snow;
+}
+.thumbnailViewRecipe img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    width: auto;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.thumbnailViewRecipe img.portraitViewRecipe {
+    width: 100%;
+    height: auto;
+}
+
+/*
+* recipe_list_item --> a 태그 밑줄 없앰
+*/
+.cnt_recipeListItem a{
+    text-decoration: none;
+
 }

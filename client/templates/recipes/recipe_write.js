@@ -37,9 +37,8 @@ Template.recipeWrite.events({
                 Session.set('titlePic',fileObj._id);
                 setTimeout(function () {
                     UI.insert(UI.renderWithData(Template.imageView, {imageview:fileObj._id}),$('.titleImage')[0]);
-                }, 150);
+                }, 500);
             })
         })
     }
 });
-
