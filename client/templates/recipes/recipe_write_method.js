@@ -14,7 +14,7 @@ Template.recipeWriteMethod.events({
                 Session.set(template.firstNode.name, fileObj._id);
                 setTimeout(function () {
                     UI.insert(UI.renderWithData(Template.imageView, {imageview: fileObj._id}), $('.' + template.firstNode.name)[0]);
-                },150)
+                },500)
             });
         });
     }

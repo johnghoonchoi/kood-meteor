@@ -35,7 +35,7 @@ Template.signup.events({
 				nickname: tmpl.find('input[name=nickname]').value,
 				friends : new Array()
 			}
-		};
+		}
 		Accounts.createUser(info,function(err){
 			if (err){
 				alert(err);
