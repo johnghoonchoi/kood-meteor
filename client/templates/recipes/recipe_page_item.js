@@ -1,6 +1,5 @@
 Template.recipePageItem.events({
     'click button[name=Follow]' : function(evt,tmpl) {
-<<<<<<< Updated upstream
         //push & pop friends
         if(Meteor.user().username != this.userName) {
             if(Meteor.user().profile.friends != this.userName) {
@@ -17,13 +16,11 @@ Template.recipePageItem.events({
                 )
             }
         }
-=======
         Meteor.users.update(
             {_id:Meteor.user()._id}, {
                 '$addToSet' : { "profile.nickname":"tmomomomnononoomof" }
             }
         )
->>>>>>> Stashed changes
     }
 });
 
