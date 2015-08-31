@@ -20,6 +20,7 @@ Template.recipeWrite.events({
             , division: tmpl.find('input[name=division]').value
             , titlePic: titlePic
             , method:method
+            , submitted: new Date()
         });
 
         Session.set('methodImage1', 'undefined');
