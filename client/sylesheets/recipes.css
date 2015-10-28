@@ -1,11 +1,11 @@
-.cnt_recipeListItem {
+/*.cnt_recipeListItem {
     float: left;
     padding: 10px;
     width: 220px;
     background-color: whitesmoke;
     margin: 10px;
     text-align: center;
-}
+}*/
 
 .recipeName{
     font-size: large;
@@ -62,7 +62,7 @@
     width: 400px;
     height: 400px;
     overflow: hidden;
-    background-color: snow;
+    background-color: white;
 }
 .thumbnailViewRecipe img {
     position: absolute;
@@ -81,7 +81,3 @@
 /*
 * recipe_list_item --> a 태그 밑줄 없앰
 */
-.cnt_recipeListItem a{
-    text-decoration: none;
-
-}
