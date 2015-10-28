@@ -1,5 +1,8 @@
 Template.myinfo.helpers({
+    init : function(){
+        Session.set('menuSelect', Meteor.user().username);
+    },
     list : function(){
-        return Recipes.find({userName:Meteor.user().username}).fetch();
+        return this.recipeList;
     }
 });

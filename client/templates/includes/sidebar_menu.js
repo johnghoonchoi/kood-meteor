@@ -1,5 +1,5 @@
 if(Meteor.isClient){
-    sidebarArray = new Array();
+    Session.setDefault('menuSelect', 'all');
 }
 
 Template.sidebar_menu.events({
@@ -7,31 +7,18 @@ Template.sidebar_menu.events({
         if(evt.currentTarget.checked == true)
         {
             switch(evt.currentTarget.value){
-                case "beef" : sidebarArray[0] = "beef"; break;
-                case "chicken" : sidebarArray[1] = "chicken"; break;
-                case "pork" : sidebarArray[2] = "pork"; break;
-                case "seafood" : sidebarArray[3] = "seafood"; break;
-                case "vegan" : sidebarArray[4] = "vegan"; break;
-                case "dessert" : sidebarArray[5] = "dessert"; break;
-                case "fusion" : sidebarArray[6] = "fusion"; break;
-                case "etc" : sidebarArray[7] = "etc"; break;
+                case "all" : Session.set('menuSelect', "all"); break;
+                case "beef" : Session.set('menuSelect', "beef"); break;
+                case "chicken" : Session.set('menuSelect', "chicken"); break;
+                case "pork" : Session.set('menuSelect', "pork"); break;
+                case "seafood" : Session.set('menuSelect', "seafood"); break;
+                case "vegan" : Session.set('menuSelect', "vegan"); break;
+                case "dessert" : Session.set('menuSelect', "dessert");"dessert"; break;
+                case "fusion" : Session.set('menuSelect', "fusion");"fusion"; break;
+                case "etc" : Session.set('menuSelect', "etc");"etc"; break;
             }
-        }else{
-            switch(evt.currentTarget.value){
-                case "beef" : sidebarArray[0] = ""; break;
-                case "chicken" : sidebarArray[1] = ""; break;
-                case "pork" : sidebarArray[2] = ""; break;
-                case "seafood" : sidebarArray[3] = ""; break;
-                case "vegan" : sidebarArray[4] = ""; break;
-                case "dessert" : sidebarArray[5] = ""; break;
-                case "fusion" : sidebarArray[6] = ""; break;
-                case "etc" : sidebarArray[7] = ""; break;
-            }
+            Router.current().render(Template.sidebar_menu).data();
+            Router.current().render(Template.koodMain).data();
         }
-        alert(sidebarArray);
-    },
-    'click button[name=Confirm]' : function(evt,tmpl){
-        Router.current().render(Template.sidebar_menu).data();
-        Router.current().render(Template.koodMain).data();
     }
 });
